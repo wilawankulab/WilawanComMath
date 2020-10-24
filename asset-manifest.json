@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/WilawanCommath/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/WilawanCommath/static/js/main.feb25aed.chunk.js",
+    "main.js.map": "/WilawanCommath/static/js/main.feb25aed.chunk.js.map",
+    "runtime-main.js": "/WilawanCommath/static/js/runtime-main.788b34b8.js",
+    "runtime-main.js.map": "/WilawanCommath/static/js/runtime-main.788b34b8.js.map",
+    "static/js/2.d6dbd56e.chunk.js": "/WilawanCommath/static/js/2.d6dbd56e.chunk.js",
+    "static/js/2.d6dbd56e.chunk.js.map": "/WilawanCommath/static/js/2.d6dbd56e.chunk.js.map",
+    "index.html": "/WilawanCommath/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/WilawanCommath/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.d6dbd56e.chunk.js.LICENSE.txt": "/WilawanCommath/static/js/2.d6dbd56e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.788b34b8.js",
+    "static/js/2.d6dbd56e.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.feb25aed.chunk.js"
+  ]
+}
