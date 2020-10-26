@@ -7,14 +7,19 @@ import Interpolation from "./views/interpolation";
 import Differentiation from "./views/differentiation";
 import Integration from "./views/integration";
 import RootFinding from "./views/root-finding";
+import Index from "./views/home";
 
 const routes = [
   {
     path: "/",
-    element: <Main />,
+    element: <Index />,
   },
   {
-    path: "com-pj",
+    path: "WilawanCommath",
+    element: <Index />,
+  },
+  {
+    path: "main",
     element: <Main />,
   },
   {

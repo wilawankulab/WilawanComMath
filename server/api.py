@@ -36,6 +36,7 @@ origins = [
     "http://localhost",
     "http://localhost:80",
     "http://localhost:8000",
+    "http://localhost:8000/main",
     "http://localhost:8000/b2s",
     "http://localhost:8000/elimination",
     "http://localhost:8000/interpolation",

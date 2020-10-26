@@ -38,7 +38,7 @@ export default function Page() {
   const [result, setresult] = useState("");
 
   const back = () => {
-    navigate("/com-pj");
+    navigate("/WilawanCommath/main");
   };
 
   const generate = () => {
@@ -53,10 +53,11 @@ export default function Page() {
   };
 
     return (
+      <div>
          <Typography align="center">
       <Card className={classes.card}>
         <CardHeader
-          title="บทที่ 4"
+          title="Chapter 4"
           titleTypographyProps={{ align: "center" }}
           subheaderTypographyProps={{ align: "center" }}
           className={classes.cardHeader}
@@ -67,29 +68,32 @@ export default function Page() {
               <TextField
                 id="outlined-basic"
                 value={h}
-                label="ค่า H"
+                label="H value"
                 variant="outlined"
                 onChange={(e) => seth(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
               <TextField
                 id="outlined-basic"
                 value={p}
-                label="ค่า P"
+                label="P value"
                 variant="outlined"
                 onChange={(e) => setp(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={12} md={12}>
                 <TextField
                   id="outlined-read-only-input"
-                  label="ผลลัพธ์"
+                  label="result"
                     value={result===""?"":result}
                   InputProps={{
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
             </Grid>
           </Grid>
@@ -101,9 +105,9 @@ export default function Page() {
                 onClick={generate}
                 fullWidth
                 variant="contained"
-                color="primary"
+                color="secondary"
               >
-                คำนวน
+                calculate
               </Button>
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -111,14 +115,26 @@ export default function Page() {
                 onClick={back}
                 fullWidth
                 variant="outlined"
-                color="primary"
+                color="secondary"
               >
-                กลับ
+                back
               </Button>
             </Grid>
           </Grid>
         </CardActions>
       </Card>
     </Typography>
+    
+    <br></br>
+    <br></br>
+    
+    
+    <center><h9>"Finding the Central Difference Approximations: CDA using Richardson Extrapolation."</h9>
+                    </center>  
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+    </div>
     )
 }

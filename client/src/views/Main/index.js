@@ -1,6 +1,7 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Button from '@material-ui/core/Button';
+
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
@@ -17,10 +18,10 @@ import { useNavigate } from "react-router-dom";
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
+    <Typography variant="body1" color="textSecondary" align="center">
+      {'Project Computational Mathematics @'}
       <Link color="inherit" href="https://material-ui.com/">
-        Numnim Website
+         Wilawan Kulab 
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -72,7 +73,7 @@ export default function MainPage() {
   const navigate = useNavigate();
 
   const nextPage = (page) => {
-    navigate("/com-pj/"+page);
+    navigate("/WilawanCommath/"+page);
   }
 
   return (
@@ -81,26 +82,31 @@ export default function MainPage() {
       <AppBar position="static" color="default" elevation={0} className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
           <Typography variant="h6" color="inherit" noWrap className={classes.toolbarTitle}>
-            61114440531 Muthita Munmueang
+          Computational Mathematics
           </Typography>
         </Toolbar>
       </AppBar>
       {/* Hero unit */}
+      <Grid item xs={12} sm={450}>
+    <Box bgcolor="secondary.main" color="secondary.contrastText" p={2}>
       <Container maxWidth="sm" component="main" className={classes.heroContent}>
         <Typography component="h1" variant="h2" align="center" color="textPrimary" gutterBottom>
-          บทที่ 1-6
+          LESSON
         </Typography>
         <Typography variant="h5" align="center" color="textSecondary" component="p">
-          เลือกหัวข้อที่คุณต้องการที่จะเรียนรู้
+          Select the topic you want to learn.
         </Typography>
       </Container>
+        
+    
+        
       {/* End hero unit */}
       <Container maxWidth="md" component="main">
         <Grid container spacing={5} alignItems="flex-end">
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 1"
+                  title="Chapter 1"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -111,8 +117,8 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit1")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit1")}}>
+                    Select
                   </Button>
                 </CardActions>
               </Card>
@@ -120,7 +126,7 @@ export default function MainPage() {
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 2"
+                  title="Chapter 2"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -131,8 +137,8 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit2")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit2")}}>
+                    Select
                   </Button>
                 </CardActions>
               </Card>
@@ -140,7 +146,7 @@ export default function MainPage() {
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 3"
+                  title="Chapter 3"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -151,8 +157,8 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit3")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit3")}}>
+                  Select
                   </Button>
                 </CardActions>
               </Card>
@@ -160,7 +166,7 @@ export default function MainPage() {
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 4"
+                  title="Chapter 4"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -171,8 +177,8 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit4")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit4")}}>
+                  Select
                   </Button>
                 </CardActions>
               </Card>
@@ -180,7 +186,7 @@ export default function MainPage() {
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 5"
+                  title="Chapter 5"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -191,8 +197,8 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit5")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit5")}}>
+                  Select
                   </Button>
                 </CardActions>
               </Card>
@@ -201,7 +207,7 @@ export default function MainPage() {
             <Grid item  xs={12} sm={6} md={4}>
               <Card>
                 <CardHeader
-                  title="บทที่ 6"
+                  title="Chapter 6"
                   titleTypographyProps={{ align: 'center' }}
                   subheaderTypographyProps={{ align: 'center' }}
                   className={classes.cardHeader}
@@ -212,20 +218,22 @@ export default function MainPage() {
                     </Typography>
                 </CardContent>
                 <CardActions>
-                  <Button fullWidth variant="contained" color="primary" onClick={()=>{nextPage("unit6")}}>
-                    เลือก
+                  <Button fullWidth variant="contained" color="secondary" onClick={()=>{nextPage("unit6")}}>
+                  Select
                   </Button>
                 </CardActions>
               </Card>
             </Grid>
         </Grid>
       </Container>
+      
       {/* Footer */}
       <Container maxWidth="md" component="footer" className={classes.footer}>
         <Box mt={5}>
           <Copyright />
         </Box>
       </Container>
+      </Box></Grid>
       {/* End footer */}
     </React.Fragment>
   );

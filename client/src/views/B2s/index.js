@@ -12,6 +12,7 @@ import {
 } from "@material-ui/core";
 import { useNavigate } from "react-router-dom";
 import { getB2s } from "../../functions";
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles((theme) => ({
   cardHeader: {
@@ -40,38 +41,46 @@ export default function Page() {
   };
 
   const back = () => {
-    navigate("/com-pj");
+    navigate("/WilawanCommath/main");
   };
 
   return (
+    <div>
+    
+                    
+    
     <Typography align="center">
       <Card className={classes.card}>
         <CardHeader
-          title="บทที่ 1"
+          title="Chapter 1"
           titleTypographyProps={{ align: "center" }}
           subheaderTypographyProps={{ align: "center" }}
           className={classes.cardHeader}
         />
+     
         <CardContent>
+          
           <Grid container spacing={3} alignItems="flex-end">
             <Grid item xs={12} sm={6} md={6}>
               <TextField
-                id="outlined-basic"
+                 id="outlined-secondary"
                 value={bit2string}
-                label="กรอกเลขฐานสอง"
+                label="Enter a binary number"
                 variant="outlined"
+                color="secondary"
                 onChange={(e) => setBit2string(e.target.value)}
               />
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
                 <TextField
-                  id="outlined-read-only-input"
-                  label="ผลลัพธ์"
+                    id="outlined-secondary"
+                    label="result"
                     value={result===""?"":result}
                   InputProps={{
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
             </Grid>
           </Grid>
@@ -83,9 +92,9 @@ export default function Page() {
                 onClick={generate}
                 fullWidth
                 variant="contained"
-                color="primary"
+                color="secondary"
               >
-                คำนวน
+                calculate
               </Button>
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -93,14 +102,26 @@ export default function Page() {
                 onClick={back}
                 fullWidth
                 variant="outlined"
-                color="primary"
+                color="secondary"
               >
-                กลับ
+                
+                back
               </Button>
             </Grid>
           </Grid>
+          
         </CardActions>
+        
       </Card>
+      
     </Typography>
+    <br></br>
+    <br></br>
+    <br></br>
+    <center><h9 >"Convert numbers from binary numbers using IEEE single precision format"</h9>
+                    </center>  
+    </div>
+    
+ 
   );
 }

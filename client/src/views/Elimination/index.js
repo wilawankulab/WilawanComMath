@@ -57,7 +57,7 @@ export default function Page() {
   const [x2, setx2] = useState("");
 
   const back = () => {
-    navigate("/com-pj");
+    navigate("/WilawanCommath/main");
   };
 
   const generate = () => {
@@ -77,10 +77,12 @@ export default function Page() {
     });
   };
   return (
+    <div>
+    
     <Typography align="center">
       <Card className={classes.card}>
         <CardHeader
-          title="บทที่ 2"
+          title="Chapter 2"
           titleTypographyProps={{ align: "center" }}
           subheaderTypographyProps={{ align: "center" }}
           className={classes.cardHeader}
@@ -88,7 +90,7 @@ export default function Page() {
         <CardContent>
           <Grid container spacing={3} alignItems="flex-end">
             <Grid item xs={12} sm={6} md={6}>
-                <Typography>อะเรย์ A = 3x3</Typography>
+                <Typography>Array A = 3x3</Typography>
               <Grid container spacing={3} alignItems="flex-end">
                 <Grid item xs={12} sm={4} md={4}>
                   <TextField
@@ -96,6 +98,7 @@ export default function Page() {
                     value={a00}
                     variant="outlined"
                     onChange={(e) => seta00(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -104,6 +107,7 @@ export default function Page() {
                     value={a01}
                     variant="outlined"
                     onChange={(e) => seta01(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -112,6 +116,7 @@ export default function Page() {
                     value={a02}
                     variant="outlined"
                     onChange={(e) => seta02(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -120,6 +125,7 @@ export default function Page() {
                     value={a10}
                     variant="outlined"
                     onChange={(e) => seta10(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -128,6 +134,7 @@ export default function Page() {
                     value={a11}
                     variant="outlined"
                     onChange={(e) => seta11(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -136,6 +143,7 @@ export default function Page() {
                     value={a12}
                     variant="outlined"
                     onChange={(e) => seta12(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -144,6 +152,7 @@ export default function Page() {
                     value={a20}
                     variant="outlined"
                     onChange={(e) => seta20(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -152,6 +161,7 @@ export default function Page() {
                     value={a21}
                     variant="outlined"
                     onChange={(e) => seta21(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -160,20 +170,23 @@ export default function Page() {
                     value={a22}
                     variant="outlined"
                     onChange={(e) => seta22(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
               </Grid>
             </Grid>
 
             <Grid item xs={12} sm={6} md={6}>
-            <Typography>อะเรย์ B</Typography>
+            <Typography>Array B</Typography>
               <Grid container spacing={3} alignItems="flex-end">
-                <Grid item xs={12} sm={4} md={4}>
+                <Grid item xs={12}  sm={4} md={4}>
                 <TextField
                     id="outlined-basic"
                     value={b1}
                     variant="outlined"
                     onChange={(e) => setb1(e.target.value)}
+                    color="secondary"
+
                   />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -182,6 +195,7 @@ export default function Page() {
                     value={b2}
                     variant="outlined"
                     onChange={(e) => setb2(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
 
@@ -191,6 +205,7 @@ export default function Page() {
                     value={b3}
                     variant="outlined"
                     onChange={(e) => setb3(e.target.value)}
+                    color="secondary"
                   />
                 </Grid>
               </Grid>
@@ -199,7 +214,7 @@ export default function Page() {
                 <Divider></Divider>
 
                 <Typography className={classes.typho}
-                >ผลลัพธ์</Typography>
+                >result</Typography>
             <Grid className={classes.grid} container spacing={3} alignItems="flex-end">
                 <Grid item xs={12} sm={4} md={4}>
                 <TextField
@@ -210,6 +225,7 @@ export default function Page() {
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
                 </Grid>
                 <Grid item xs={12} sm={4} md={4}>
@@ -221,6 +237,7 @@ export default function Page() {
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
                 </Grid>
 
@@ -233,6 +250,7 @@ export default function Page() {
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
                 </Grid>
               </Grid>
@@ -246,9 +264,9 @@ export default function Page() {
                 onClick={generate}
                 fullWidth
                 variant="contained"
-                color="primary"
+                color="secondary"
               >
-                คำนวน
+                calculate
               </Button>
             </Grid>
             <Grid item xs={12} sm={6} md={6}>
@@ -256,14 +274,25 @@ export default function Page() {
                 onClick={back}
                 fullWidth
                 variant="outlined"
-                color="primary"
+                color="secondary"
               >
-                กลับ
+                back
               </Button>
             </Grid>
           </Grid>
         </CardActions>
       </Card>
     </Typography>
+    <br></br>
+    <br></br>
+    
+    
+    <center><h9>"Use the elimination distance to find the solution of Ax = b."</h9>
+                    </center>  
+                    <br></br>
+                    <br></br>
+                    <br></br>
+                    
+    </div>
   );
 }

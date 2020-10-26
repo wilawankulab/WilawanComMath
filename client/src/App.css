@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+
+
+h1,
+h2,
+h3,
+h4,
+p
+{
+  font-family: "Prompt", sans-serif;
+}
+
+.body {
+  text-align: center;
+  
+}
+
+.img-fluid {
+  max-width: 100% ;
+  height: auto ;
+}
+

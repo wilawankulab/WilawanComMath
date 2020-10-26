@@ -55,7 +55,7 @@ export default function Page() {
   const [result, setresult] = useState("");
 
   const back = () => {
-    navigate("/com-pj");
+    navigate("/WilawanCommath/main");
   };
 
   const generate = () => {
@@ -69,10 +69,11 @@ export default function Page() {
     });
   };
   return (
+    <div>
     <Typography align="center">
       <Card className={classes.card}>
         <CardHeader
-          title="บทที่ 3"
+          title="Chapter 3"
           titleTypographyProps={{ align: "center" }}
           subheaderTypographyProps={{ align: "center" }}
           className={classes.cardHeader}
@@ -86,6 +87,7 @@ export default function Page() {
                 value={x}
                 variant="outlined"
                 onChange={(e) => setx(e.target.value)}
+                color="secondary"
               />
             </Grid>
 
@@ -96,6 +98,7 @@ export default function Page() {
                 value={xi1}
                 variant="outlined"
                 onChange={(e) => setxi1(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -105,6 +108,7 @@ export default function Page() {
                 value={xi2}
                 variant="outlined"
                 onChange={(e) => setxi2(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -114,6 +118,7 @@ export default function Page() {
                 value={xi3}
                 variant="outlined"
                 onChange={(e) => setxi3(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -123,6 +128,7 @@ export default function Page() {
                 value={xi4}
                 variant="outlined"
                 onChange={(e) => setxi4(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -132,6 +138,7 @@ export default function Page() {
                 value={xi5}
                 variant="outlined"
                 onChange={(e) => setxi5(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -141,6 +148,7 @@ export default function Page() {
                 value={xi6}
                 variant="outlined"
                 onChange={(e) => setxi6(e.target.value)}
+                color="secondary"
               />
             </Grid>
 
@@ -151,6 +159,7 @@ export default function Page() {
                 value={yi1}
                 variant="outlined"
                 onChange={(e) => setyi1(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -160,6 +169,7 @@ export default function Page() {
                 value={yi2}
                 variant="outlined"
                 onChange={(e) => setyi2(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -169,6 +179,7 @@ export default function Page() {
                 value={yi3}
                 variant="outlined"
                 onChange={(e) => setyi3(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -178,6 +189,7 @@ export default function Page() {
                 value={yi4}
                 variant="outlined"
                 onChange={(e) => setyi4(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -187,6 +199,7 @@ export default function Page() {
                 value={yi5}
                 variant="outlined"
                 onChange={(e) => setyi5(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={2} md={2}>
@@ -196,17 +209,19 @@ export default function Page() {
                 value={yi6}
                 variant="outlined"
                 onChange={(e) => setyi6(e.target.value)}
+                color="secondary"
               />
             </Grid>
             <Grid item xs={12} sm={12} md={12}>
                 <TextField
                   id="outlined-read-only-input"
-                  label="ผลลัพธ์"
+                  label="result"
                     value={result===""?"":result}
                   InputProps={{
                     readOnly: true,
                   }}
                   variant="outlined"
+                  color="secondary"
                 />
             </Grid>
           </Grid>
@@ -218,9 +233,9 @@ export default function Page() {
                   onClick={generate}
                   fullWidth
                   variant="contained"
-                  color="primary"
+                  color="secondary"
                 >
-                  คำนวน
+                  calculate
                 </Button>
               </Grid>
               <Grid item xs={12} sm={6} md={6}>
@@ -228,14 +243,28 @@ export default function Page() {
                   onClick={back}
                   fullWidth
                   variant="outlined"
-                  color="primary"
+                  color="secondary"
                 >
-                  กลับ
+                  back
                 </Button>
               </Grid> 
           </Grid>
         </CardActions>
       </Card>
     </Typography>
+    <br></br>
+    <br></br>
+    
+    
+    <center><h9>
+"
+When given time is t (sec), velocity is v (m / s).
+t is the horizontal time or the x-axis, v is the vertical or y-axis velocity."</h9>
+                    </center>  
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+    </div>
   );
 }
